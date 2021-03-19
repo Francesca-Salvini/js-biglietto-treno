@@ -37,27 +37,27 @@ document.getElementById("chilometri-utente").innerHTML = "La distanza che vuoi p
 
 //CALCOLO PREZZO BIGLIETTO
 
-var prezzoBigliettoDec = chilometriUtenteNumb * 0.21;
+var prezzoBiglietto = chilometriUtenteNumb * 0.21;
 //output del prezzo con due decimali dopo la virgola
-var prezzoBiglietto = prezzoBigliettoDec.toFixed(2);
-console.log("prezzo biglietto:" , prezzoBiglietto , "euro");
+// var prezzoBiglietto = prezzoBigliettoDec.toFixed(2);
+// console.log("prezzo biglietto:" , prezzoBiglietto , "euro");
 
 //CALCOLO SCONTI 
 //minorenni
 
-var prezzoGiovaniDec = prezzoBigliettoDec - (prezzoBigliettoDec * 0.2); 
+var prezzoGiovani = prezzoBiglietto - (prezzoBiglietto * 0.2); 
 //output del prezzo con due decimali dopo la virgola
-var prezzoGiovani = prezzoGiovaniDec.toFixed(2);
+// var prezzoGiovani = prezzoGiovaniDec.toFixed(2);
 
-console.log("biglietto ridotto minorenni:", prezzoGiovani, "euro");
+// console.log("biglietto ridotto minorenni:", prezzoGiovani, "euro");
 
 //over 65
 
-var prezzoOver65Dec = prezzoBigliettoDec - (prezzoBigliettoDec * 0.4 );
-//output del prezzo con due decimali dopo la virgola
-var prezzoOver65 = prezzoOver65Dec.toFixed(2);
+var prezzoOver65 = prezzoBiglietto - (prezzoBiglietto * 0.4 );
+// //output del prezzo con due decimali dopo la virgola
+// var prezzoOver65 = prezzoOver65Dec.toFixed(2);
 
-console.log("biglietto ridotto over65:", prezzoOver65, "euro");
+// console.log("biglietto ridotto over65:", prezzoOver65, "euro");
 
 //CALCOLO PREZZO IN BASE ALL'ETÀ DELL'UTENTE
 
@@ -66,17 +66,17 @@ if(etaUtenteNumb < 18 ) {
     alert("Il tuo biglietto costa: " + prezzoGiovani + " euro");
 
     //output su schermo
-    document.getElementById("prezzo").innerHTML = "Totale spesa : " + prezzoGiovani + " euro";
+    document.getElementById("prezzo").innerHTML = "Totale spesa : " + prezzoGiovani.toFixed(2) + " euro";
 } else if (etaUtenteNumb > 65) {
     alert("Il tuo biglietto costa: " + prezzoOver65 + " euro");
 
     //output su schermo
-    document.getElementById("prezzo").innerHTML = "Totale spesa : " + prezzoOver65 + " euro";
+    document.getElementById("prezzo").innerHTML = "Totale spesa : " + prezzoOver65.toFixed(2) + " euro";
 } else {
     alert("Il tuo biglietto costa: " + prezzoBiglietto + " euro");
 
     //output su schermo
-    document.getElementById("prezzo").innerHTML = "Totale spesa : " + prezzoBiglietto + " euro";
+    document.getElementById("prezzo").innerHTML = "Totale spesa : " + prezzoBiglietto.toFixed(2) + " euro";
 }
 
 
