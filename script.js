@@ -18,6 +18,8 @@ console.log("età utente:", etaUtente);
 var etaUtenteNumb = parseInt(etaUtente);
 console.log(etaUtenteNumb);
 
+//output su schermo
+document.getElementById("eta-utente").innerHTML = "La tua età è : " + etaUtenteNumb + " anni";
 
 //CHILOMETRI UTENTE
 //prompt per sapere quanti chilometri vuole percorrere l'utente
@@ -29,6 +31,9 @@ console.log("chilometri che vuole percorrere:", chilometriUtente);
 
 var chilometriUtenteNumb = parseInt(chilometriUtente);
 console.log(chilometriUtenteNumb);
+
+//output su schermo
+document.getElementById("chilometri-utente").innerHTML = "I chilometri che vuoi percorrere : " + chilometriUtenteNumb + " chilometri";
 
 //CALCOLO PREZZO BIGLIETTO
 
@@ -59,8 +64,19 @@ console.log("biglietto ridotto over65:", prezzoOver65, "euro");
 if(etaUtenteNumb < 18 ) {
 
     alert("Il tuo biglietto costa: " + prezzoGiovani + " euro");
+
+    //output su schermo
+    document.getElementById("prezzo").innerHTML = "Totale spesa : " + prezzoGiovani + " euro";
 } else if (etaUtenteNumb > 65) {
     alert("Il tuo biglietto costa: " + prezzoOver65 + " euro");
+
+    //output su schermo
+    document.getElementById("prezzo").innerHTML = "Totale spesa : " + prezzoOver65 + " euro";
 } else {
     alert("Il tuo biglietto costa: " + prezzoBiglietto + " euro");
+
+    //output su schermo
+    document.getElementById("prezzo").innerHTML = "Totale spesa : " + prezzoBiglietto + " euro";
 }
+
+
