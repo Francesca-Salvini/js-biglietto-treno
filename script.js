@@ -11,7 +11,7 @@
 //prompt per sapere gli anni dell'utente 
 
 var etaUtente = prompt ("Quanti anni hai?");
-console.log(etaUtente);
+console.log("età utente:", etaUtente);
 
 //parseInt per lavorare con numeri interi 
 
@@ -23,9 +23,14 @@ console.log(etaUtenteNumb);
 //prompt per sapere quanti chilometri vuole percorrere l'utente
 
 var chilometriUtente = prompt("Quanti chilometri vuoi percorrere?");
-console.log(chilometriUtente);
+console.log("chilometri che vuole percorrere:", chilometriUtente);
 
 //parseInt per lavorare con numeri interi
 
 var chilometriUtenteNumb = parseInt(chilometriUtente);
 console.log(chilometriUtenteNumb);
+
+//CALCOLO PREZZO BIGLIETTO
+
+var prezzoBiglietto = chilometriUtenteNumb * 0.21
+console.log("prezzo biglietto:" , prezzoBiglietto , "euro");
