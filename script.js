@@ -34,3 +34,14 @@ console.log(chilometriUtenteNumb);
 
 var prezzoBiglietto = chilometriUtenteNumb * 0.21
 console.log("prezzo biglietto:" , prezzoBiglietto , "euro");
+
+//CALCOLO SCONTI 
+//minorenni
+
+var prezzoGiovani = prezzoBiglietto - (prezzoBiglietto * 0.2); 
+console.log("biglietto ridotto minorenni:", prezzoGiovani);
+
+//over 65
+
+var prezzoOver65 = prezzoBiglietto - (prezzoBiglietto * 0.4 );
+console.log("biglietto ridotto over65:", prezzoOver65);
