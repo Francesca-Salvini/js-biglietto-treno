@@ -39,9 +39,20 @@ console.log("prezzo biglietto:" , prezzoBiglietto , "euro");
 //minorenni
 
 var prezzoGiovani = prezzoBiglietto - (prezzoBiglietto * 0.2); 
-console.log("biglietto ridotto minorenni:", prezzoGiovani);
+console.log("biglietto ridotto minorenni:", prezzoGiovani, "euro");
 
 //over 65
 
 var prezzoOver65 = prezzoBiglietto - (prezzoBiglietto * 0.4 );
-console.log("biglietto ridotto over65:", prezzoOver65);
+console.log("biglietto ridotto over65:", prezzoOver65, "euro");
+
+//CALCOLO PREZZO IN BASE ALL'ETÀ DELL'UTENTE
+
+if(etaUtenteNumb < 18 ) {
+
+    alert("Il tuo biglietto costa: " + prezzoGiovani + " euro");
+} else if (etaUtenteNumb > 65) {
+    alert("Il tuo biglietto costa: " + prezzoOver65 + " euro");
+} else {
+    alert("Il tuo biglietto costa: " + prezzoBiglietto + " euro");
+}
