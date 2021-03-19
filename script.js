@@ -40,7 +40,8 @@ document.getElementById("chilometri-utente").innerHTML = "La distanza che vuoi p
 var prezzoBiglietto = chilometriUtenteNumb * 0.21;
 //output del prezzo con due decimali dopo la virgola
 // var prezzoBiglietto = prezzoBigliettoDec.toFixed(2);
-// console.log("prezzo biglietto:" , prezzoBiglietto , "euro");
+
+console.log("prezzo biglietto:" , prezzoBiglietto , "euro");
 
 //CALCOLO SCONTI 
 //minorenni
@@ -49,7 +50,7 @@ var prezzoGiovani = prezzoBiglietto - (prezzoBiglietto * 0.2);
 //output del prezzo con due decimali dopo la virgola
 // var prezzoGiovani = prezzoGiovaniDec.toFixed(2);
 
-// console.log("biglietto ridotto minorenni:", prezzoGiovani, "euro");
+console.log("biglietto ridotto minorenni:", prezzoGiovani, "euro");
 
 //over 65
 
@@ -57,7 +58,7 @@ var prezzoOver65 = prezzoBiglietto - (prezzoBiglietto * 0.4 );
 // //output del prezzo con due decimali dopo la virgola
 // var prezzoOver65 = prezzoOver65Dec.toFixed(2);
 
-// console.log("biglietto ridotto over65:", prezzoOver65, "euro");
+console.log("biglietto ridotto over65:", prezzoOver65, "euro");
 
 //CALCOLO PREZZO IN BASE ALL'ETÀ DELL'UTENTE
 
