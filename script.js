@@ -33,7 +33,7 @@ var chilometriUtenteNumb = parseInt(chilometriUtente);
 console.log(chilometriUtenteNumb);
 
 //output su schermo
-document.getElementById("chilometri-utente").innerHTML = "I chilometri che vuoi percorrere : " + chilometriUtenteNumb + " chilometri";
+document.getElementById("chilometri-utente").innerHTML = "La distanza che vuoi percorrere : " + chilometriUtenteNumb + " km";
 
 //CALCOLO PREZZO BIGLIETTO
 

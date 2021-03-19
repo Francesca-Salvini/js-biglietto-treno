@@ -1,8 +1,29 @@
 body {
-    background-color: darkcyan;
-    color: white;
+    background-image: url(../img/treno1.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Roboto', sans-serif;
+    
 }
 
 h1 {
     text-align: center;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+   
+}
+
+.wrapper {
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 20px;
+    padding: 50px;
+    text-align: center;
+    font-weight: 300;
 }
